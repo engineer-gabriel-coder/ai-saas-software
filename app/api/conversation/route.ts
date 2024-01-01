@@ -11,7 +11,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-export default async function handler(req: Request) {
+async function handler(req: Request) {
   try {
     // Destructure user ID directly from auth() result
     const { userId } = auth();
